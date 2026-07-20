@@ -6,7 +6,6 @@ An editorial-style personal portfolio site for Raven Matibag — a Computer Engi
 
 ## Live Demo
 
-> Add your deployed link here once published, e.g.:
 > **[ravenmatibag.github.io/portfolio](https://ravenmatibag.github.io/portfolio/)**
 
 ## Features
