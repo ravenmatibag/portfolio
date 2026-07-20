@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="All projects by Raven Matibag — a Computer Engineering graduate and Software Engineer." />
+    <meta name="theme-color" content="#f5f3ee" />
+    <title>Projects — Raven Matibag</title>
+
+    <link rel="canonical" href="https://ravenmatibag.github.io/portfolio/projects.html" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Projects — Raven Matibag" />
+    <meta property="og:description" content="All projects by Raven Matibag — a Computer Engineering graduate and Software Engineer." />
+    <meta property="og:url" content="https://ravenmatibag.github.io/portfolio/projects.html" />
+    <meta property="og:image" content="assets/screenshots/quiet-list-preview.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Projects — Raven Matibag" />
+    <meta name="twitter:description" content="All projects by Raven Matibag — a Computer Engineering graduate and Software Engineer." />
+    <meta name="twitter:image" content="assets/screenshots/quiet-list-preview.png" />
+
+    <link rel="manifest" href="manifest.json" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <header class="nav" id="nav">
+      <div class="nav-inner container">
+        <a href="index.html" class="brand" aria-label="Home">Raven Matibag</a>
+        <nav class="nav-menu" id="navMenu" aria-label="Primary navigation">
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="projects.html" class="nav-link active">Projects</a></li>
+            <li><a href="index.html#about" class="nav-link">About</a></li>
+            <li><a href="certifications.html" class="nav-link">Certificates</a></li>
+            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-controls">
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <a href="index.html" class="page-back" aria-label="Back to homepage">← Back to home</a>
+          <p class="section-label">Projects — Index</p>
+          <h1 class="page-title">All Projects.</h1>
+          <p class="page-desc">A collection of my work—from personal builds to freelance solutions. Each project represents a challenge I found worth solving</p>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="container">
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-card-image">
+                <img
+                  src="assets/screenshots/quiet-list-preview.png"
+                  alt="Screenshot of The Quiet List app"
+                  class="project-card-img"
+                >
+              </div>
+              <div class="project-card-body">
+                <h2 class="project-card-title">The Quiet List</h2>
+                <p class="project-card-desc">A minimalist to-do app designed for calm, intentional task keeping.</p>
+                <ul class="tech-tags"><li>JavaScript</li><li>CSS3</li><li>HTML5</li></ul>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/ravenmatibag/the-quiet-list" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">GitHub</a>
+                <a href="https://ravenmatibag.github.io/the-quiet-list/" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Live Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-card-image"><span class="project-card-placeholder">Coming Soon</span></div>
+              <div class="project-card-body">
+                <h2 class="project-card-title">In Progress</h2>
+                <p class="project-card-desc">A new project is currently in development and will be showcased here soon.</p>
+                <ul class="tech-tags"><li>In Development</li></ul>
+              </div>
+              <div class="project-card-footer">
+                <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">GitHub</a>
+                <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Live Demo</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a href="index.html" class="brand" aria-label="Back to home">Raven Matibag</a>
+        <p class="copyright">&copy; <span id="year"></span> Raven Matibag. Crafted with care.</p>
+        <ul class="social-links footer-social" aria-label="Social links">
+          <li><a href="https://github.com/ravenmatibag" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/raven-matibag-33302b389/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="mailto:ravenmatibag.work@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" hidden>
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5M5 12l7-7 7 7"/>
+      </svg>
+    </button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

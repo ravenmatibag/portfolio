@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Raven Matibag — Computer Engineering graduate and Software Engineer. Editorial portfolio showcasing selected work, technologies, and craft." />
+    <meta name="theme-color" content="#f5f3ee" />
+    <title>Raven Matibag — Computer Engineer</title>
+
+    <!-- Canonical URL: update to your deployed domain -->
+    <link rel="canonical" href="https://ravenmatibag.github.io/portfolio/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Raven Matibag — Computer Engineer" />
+    <meta property="og:description" content="Computer Engineering graduate and Software Engineer. Editorial portfolio showcasing selected work, technologies, and craft." />
+    <meta property="og:url" content="https://ravenmatibag.github.io/portfolio/" />
+    <meta property="og:image" content="assets/screenshots/og-banner.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Raven Matibag — Computer Engineer" />
+    <meta name="twitter:description" content="Computer Engineering graduate and Software Engineer. Editorial portfolio showcasing selected work, technologies, and craft." />
+    <meta name="twitter:image" content="assets/screenshots/og-banner.png" />
+
+    <link rel="manifest" href="manifest.json" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- ===== Navigation ===== -->
+    <header class="nav" id="nav">
+      <div class="nav-inner container">
+        <a href="#hero" class="brand" aria-label="Home">RAVEN</a>
+
+        <nav class="nav-menu" id="navMenu" aria-label="Primary navigation">
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#certificates" class="nav-link">Certificates</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-controls">
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===== 1. HERO ===== -->
+      <section id="hero" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text fade-in">
+            <p class="hero-eyebrow">Computer Engineer — Portfolio · 2026</p>
+            <h1 class="hero-name">Raven<br/>Matibag<span style="color:var(--accent);">.</span></h1>
+            <p class="hero-role">
+              <span class="typed" id="typed" aria-live="polite"></span><span class="typed-cursor" aria-hidden="true">|</span>
+            </p>
+            <p class="hero-intro">
+              I build software, solve technical challenges, and create thoughtful digital experiences — combining engineering, development, IT expertise, and creativity to turn ideas into impactful solutions.
+            <div class="hero-actions">
+              <a href="assets/documents/Raven-Matibag-Resume.pdf" download class="btn btn-primary">Download Resume</a>
+              <a href="#contact" class="btn btn-ghost">Contact Me</a>
+            </div>
+          </div>
+
+          <div class="hero-portrait fade-in">
+            <div class="portrait-frame">
+              <img src="assets/images/profile.png" alt="Portrait of Raven Matibag" class="portrait-photo" draggable="false" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container hero-foot">
+          <ul class="social-links" aria-label="Social links">
+            <li><a href="https://github.com/ravenmatibag" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/raven-matibag-33302b389/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:ravenmatibag.work@gmail.com">Email</a></li>
+          </ul>
+          <a href="#projects" class="scroll-cue" aria-label="Scroll to Projects">
+            <span>Scroll</span>
+            <span class="scroll-line" aria-hidden="true"></span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ===== 2. SELECTED PROJECTS ===== -->
+      <section id="projects" class="section projects">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="section-label">Projects · 01</p>
+            <h2 class="section-title">Selected projects,<br/>crafted with purpose.</h2>
+            <p class="section-desc">A curated collection of projects across software, IT, and creative technology — each driven by curiosity, thoughtful problem-solving, and a focus on quality.</p>
+          </header>
+
+          <div class="project-preview" id="projectPreview" aria-hidden="true">
+            <div class="project-preview-chrome">
+              <span class="chrome-dot"></span>
+              <span class="chrome-dot"></span>
+              <span class="chrome-dot"></span>
+            </div>
+            <div class="project-preview-inner" id="projectPreviewInner"></div>
+          </div>
+
+          <ol class="project-list" id="projectList">
+            <li class="project-row reveal" data-preview="quiet">
+              <div class="project-row-grid">
+                <span class="project-number">01 / 04</span>
+                <div class="project-main">
+                  <h3 class="project-row-title"><a href="#" target="_blank" rel="noopener">The Quiet List</a></h3>
+                  <p class="project-row-desc">A minimalist to-do app designed for calm, intentional task keeping.</p>
+                  <ul class="tech-tags">
+                    <li>JavaScript</li><li>CSS3</li><li>HTML5</li>
+                  </ul>
+                </div>
+                <div class="project-actions">
+                  <a href="https://ravenmatibag.github.io/the-quiet-list/" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Live Demo</a>
+                  <a href="https://github.com/ravenmatibag/the-quiet-list" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">GitHub</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-row reveal" data-preview="project 2">
+              <div class="project-row-grid">
+                <span class="project-number">02 / 04</span>
+                <div class="project-main">
+                  <h3 class="project-row-title"><a href="#" target="_blank" rel="noopener">In Progress</a></h3>
+                  <p class="project-row-desc">A new project is currently in development and will be showcased here soon.</p>
+                  <ul class="tech-tags">
+                    <li>In Development</li>
+                  </ul>
+                </div>
+                <div class="project-actions">
+                  <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Live Demo</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">GitHub</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-row reveal" data-preview="project 3">
+              <div class="project-row-grid">
+                <span class="project-number">03 / 04</span>
+                <div class="project-main">
+                  <h3 class="project-row-title"><a href="#" target="_blank" rel="noopener">In Progress</a></h3>
+                  <p class="project-row-desc">A new project is currently in development and will be showcased here soon.</p>
+                  <ul class="tech-tags">
+                    <li>In Development</li>
+                  </ul>
+                </div>
+                <div class="project-actions">
+                  <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Live Demo</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">GitHub</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-row reveal" data-preview="project 4">
+              <div class="project-row-grid">
+                <span class="project-number">04 / 04</span>
+                <div class="project-main">
+                  <h3 class="project-row-title"><a href="#" target="_blank" rel="noopener">In Progress</a></h3>
+                  <p class="project-row-desc">A new project is currently in development and will be showcased here soon.</p>
+                  <ul class="tech-tags">
+                    <li>In Development</li>
+                  </ul>
+                </div>
+                <div class="project-actions">
+                  <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-primary">Live Demo</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">GitHub</a>
+                </div>
+              </div>
+            </li>
+          </ol>
+
+          <div class="section-cta">
+            <a href="projects.html" class="btn btn-ghost">View All Projects →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 3. ABOUT ===== -->
+      <section id="about" class="section about">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="section-label">About · 02</p>
+            <h2 class="section-title">About Me</h2>
+            <p class="section-desc">A brief introduction to my journey, interests, and passion for building meaningful technology.</p>
+          </header>
+
+          <div class="about-layout reveal">
+            <div class="about-photo-wrap">
+              <img src="assets/images/about-photo.png" alt="Portrait of Raven Matibag" class="about-photo" draggable="false" />
+            </div>
+            <div class="about-content">
+              <div class="about-bio">
+                <p>I'm a Computer Engineering graduate passionate about building software, solving technical challenges, and creating meaningful digital experiences. From developing applications to exploring creative technologies, I enjoy turning ideas into practical, user-focused solutions while continuously learning and growing as an engineer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technologies -->
+        <div class="about-sub about-sub-tech">
+          <div class="container">
+            <header class="section-head reveal">
+              <p class="section-label">Technologies</p>
+              <h3 class="section-title">The kit I reach for.</h3>
+              <p class="section-desc">The languages, frameworks, and tools I use turn ideas into reality.</p>
+            </header>
+          </div>
+
+          <div class="tech-category reveal">
+            <p class="tech-category-label container">Programming Languages</p>
+            <div class="tech-row-container">
+              <ul class="tech-track" data-direction="-1" aria-label="Programming Languages">
+                <li class="tech-item"><span class="tech-name">HTML5</span></li>
+                <li class="tech-item"><span class="tech-name">CSS3</span></li>
+                <li class="tech-item"><span class="tech-name">JavaScript</span></li>
+                <li class="tech-item"><span class="tech-name">Python</span></li>
+                <li class="tech-item"><span class="tech-name">Java</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tech-category reveal">
+            <p class="tech-category-label container">Frameworks &amp; Technologies</p>
+            <div class="tech-row-container">
+              <ul class="tech-track" data-direction="1" aria-label="Frameworks and Technologies">
+                <li class="tech-item"><span class="tech-name">Bootstrap</span></li>
+                <li class="tech-item"><span class="tech-name">Flask</span></li>
+                <li class="tech-item"><span class="tech-name">MySQL</span></li>
+                <li class="tech-item"><span class="tech-name">SQLite</span></li>
+                <li class="tech-item"><span class="tech-name">Git</span></li>
+                <li class="tech-item"><span class="tech-name">GitHub</span></li>
+                <li class="tech-item"><span class="tech-name">XAMPP</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tech-category reveal">
+            <p class="tech-category-label container">Creative &amp; Development Tools</p>
+            <div class="tech-row-container">
+              <ul class="tech-track" data-direction="-1" aria-label="Creative and Development Tools">
+                <li class="tech-item"><span class="tech-name">Figma</span></li>
+                <li class="tech-item"><span class="tech-name">Canva</span></li>
+                <li class="tech-item"><span class="tech-name">VS Code</span></li>
+                <li class="tech-item"><span class="tech-name">Arduino IDE</span></li>
+                <li class="tech-item"><span class="tech-name">Cap Cut</span></li>
+                <li class="tech-item"><span class="tech-name">GitHub Desktop</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="about-sub">
+          <div class="container">
+            <header class="section-head reveal">
+              <p class="section-label">Education</p>
+              <h3 class="section-title">Where I learned<br/>to build.</h3>
+              <p class="section-desc">My academic background and the experiences that built the foundation of my technical knowledge.</p>
+            </header>
+
+            <ol class="timeline">
+              <li class="timeline-item reveal">
+                <div class="timeline-meta"><span class="timeline-year">2019 — 2025</span></div>
+                <div class="timeline-body">
+                  <h4>B.S. in Computer Engineering</h4>
+                  <p class="timeline-place">Batangas State University</p>
+                  <p>Built a strong foundation in software development, computer systems, networking, and embedded systems. Completed an undergraduate thesis on an automated hydroponic system using image processing.</p>
+                </div>
+              </li>
+              <li class="timeline-item reveal">
+                <div class="timeline-meta"><span class="timeline-year">2017 — 2019</span></div>
+                <div class="timeline-body">
+                  <h4>Senior High School Diploma — STEM Track</h4>
+                  <p class="timeline-place">Bauan Technical Integrated High School</p>
+                  <p>Completed the STEM track, building a strong foundation in mathematics, science, and technology that prepared me for pursuing Computer Engineering.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="about-sub">
+          <div class="container">
+            <header class="section-head reveal">
+              <p class="section-label">Experience</p>
+              <h3 class="section-title">Where I've<br/>put it to work.</h3>
+              <p class="section-desc">Professional experience and internships that helped me develop technical skills, adapt to real-world environments, and grow as an engineer.</p>
+            </header>
+
+            <ol class="timeline">
+              <li class="timeline-item reveal">
+                <div class="timeline-meta"><span class="timeline-year">2025 — Present</span></div>
+                <div class="timeline-body">
+                  <h4>Freelance Electronics Technician</h4>
+                  <p class="timeline-place">Self-employed</p>
+                  <p>Provided freelance electronics repair and developed Arduino-based solutions, covering hardware troubleshooting, programming, testing, and system integration.</p>
+                </div>
+              </li>
+              <li class="timeline-item reveal">
+                <div class="timeline-meta"><span class="timeline-year">2025 — March 2026</span></div>
+                <div class="timeline-body">
+                  <h4>IT Support Technician </h4>
+                  <p class="timeline-place">A-tech Services</p>
+                  <p>Supported IT projects through system deployment, network configuration, software installation, and technical assistance.</p>
+                </div>
+              </li>
+              <li class="timeline-item reveal">
+                <div class="timeline-meta"><span class="timeline-year">Summer 2024</span></div>
+                <div class="timeline-body">
+                  <h4>Software Development Intern</h4>
+                  <p class="timeline-place">Technos Systems</p>
+                  <p>Supported software development through UI/UX design, quality testing, technical documentation, and solution prototyping.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 4. CERTIFICATIONS ===== -->
+      <section id="certificates" class="section certificates">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="section-label">Certifications · 03</p>
+            <h2 class="section-title">Always learning<br/>something new.</h2>
+            <p class="section-desc">Professional courses and certifications that reflect my commitment to continuous learning.</p>
+          </header>
+
+          <ul class="cert-list">
+            <li class="cert-item reveal">
+              <div class="cert-mark" aria-hidden="true">GA</div>
+              <h3>Google Agile Essentials</h3>
+              <p class="cert-issuer">Google · Coursera</p>
+              <span class="cert-year">2025</span>
+            </li>
+            <li class="cert-item reveal">
+              <div class="cert-mark" aria-hidden="true">AI</div>
+              <h3>Google AI Essentials</h3>
+              <p class="cert-issuer">Google · Coursera</p>
+              <span class="cert-year">2025</span>
+            </li>
+            <li class="cert-item reveal">
+              <div class="cert-mark" aria-hidden="true">GP</div>
+              <h3>Google Prompting Essentials</h3>
+              <p class="cert-issuer">Google · Coursera</p>
+              <span class="cert-year">2025</span>
+            </li>
+            <li class="cert-item reveal">
+              <div class="cert-mark" aria-hidden="true">+</div>
+              <h3>Coming Soon</h3>
+              <p class="cert-issuer">Currently pursuing professional certifications.</p>
+              <span class="cert-year">In Progress</span>
+            </li>
+          </ul>
+
+          <div class="section-cta">
+            <a href="certifications.html" class="btn btn-ghost">View All Certifications →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 5. CONTACT ===== -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="section-label">Contact · 04</p>
+            <h2 class="section-title">Let's make<br/>something worth<br/>keeping.</h2>
+            <p class="section-desc">Whether you have an opportunity, a collaboration, or simply want to connect, I'd love to hear from you.</p>
+          </header>
+
+          <div class="contact-grid">
+            <aside class="contact-info reveal">
+              <ul class="contact-list">
+                <li>
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:ravenmatibag.work@gmail.com">ravenmatibag.work@gmail.com</a>
+                </li>
+                <li>
+                  <span class="contact-label">GitHub</span>
+                  <a href="https://github.com/ravenmatibag" target="_blank" rel="noopener">github.com/ravenmatibag</a>
+                </li>
+                <li>
+                  <span class="contact-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/raven-matibag-33302b389/" target="_blank" rel="noopener">linkedin.com/in/ravenmatibag</a>
+                </li>
+                <li>
+                  <span class="contact-label">Location</span>
+                  <span>Baguio, Philippines</span>
+                </li>
+                <li>
+                  <span class="contact-label">Phone</span>
+                  <span>+63 947-539-0848</span>
+                </li>
+              </ul>
+            </aside>
+
+            <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/mlgqngjn" method="POST" novalidate>
+              <div class="field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" required placeholder="Your name" />
+                <span class="error" data-for="name"></span>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required placeholder="your@email.com" />
+                <span class="error" data-for="email"></span>
+              </div>
+              <div class="field">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="What's this about?" />
+                <span class="error" data-for="subject"></span>
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tell me more..."></textarea>
+                <span class="error" data-for="message"></span>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <p class="form-success" id="formSuccess" role="status" hidden>Thanks! Your message has been received.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a href="#hero" class="brand" aria-label="Back to top">Raven Matibag</a>
+        <p class="copyright">&copy; <span id="year"></span> Raven Matibag. Crafted with care.</p>
+        <ul class="social-links footer-social" aria-label="Social links">
+          <li><a href="https://github.com/ravenmatibag" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/raven-matibag-33302b389/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="mailto:ravenmatibag.work@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" hidden>
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5M5 12l7-7 7 7"/>
+      </svg>
+    </button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
