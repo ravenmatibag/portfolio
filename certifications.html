@@ -66,12 +66,39 @@
             <article class="cert-card reveal">
               <div class="cert-card-image"><span class="cert-card-mark">+</span></div>
               <div class="cert-card-body">
+                <h2 class="cert-card-title">Cyber Threat Monitoring Level 1</h2>
+                <p class="cert-card-issuer">TESDA · Northridge Baguio</p>
+                <span class="cert-card-date">In progress</span>
+              </div>
+              <div class="cert-card-footer">
+                <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">View Credential →</a>
+              </div>
+            </article>
+
+            <article class="cert-card reveal">
+              <div class="cert-card-image"><span class="cert-card-mark">+</span></div>
+              <div class="cert-card-body">
                 <h2 class="cert-card-title">Data Analytics Level III</h2>
                 <p class="cert-card-issuer">TESDA · Northridge Baguio</p>
                 <span class="cert-card-date">2026</span>
               </div>
               <div class="cert-card-footer">
                 <a href="#" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">View Credential →</a>
+              </div>
+            </article>
+
+            <article class="cert-card reveal">
+              <div class="cert-card-image">
+                <img
+                  src="assets/certificates/pte.png"
+                  alt="PTE Academic Test Result"
+                  class="cert-card-img"
+                />
+              </div>
+              <div class="cert-card-body">
+                <h2 class="cert-card-title">Pearson Test of English (PTE Academic)  </h2>
+                <p class="cert-card-issuer">Overall Score: 82 / 90`  </p>
+                <span class="cert-card-date">2026</span>
               </div>
             </article>
 
@@ -200,6 +227,18 @@
         <path d="M12 19V5M5 12l7-7 7 7"/>
       </svg>
     </button>
+
+    <div class="lightbox" id="certLightbox" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="lightbox-figure">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close full view">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M6 6l12 12M18 6L6 18"/>
+          </svg>
+        </button>
+        <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+      </div>
+    </div>
 
     <script src="js/script.js"></script>
   </body>

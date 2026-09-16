@@ -1068,10 +1068,47 @@ ul, ol { list-style: none; }
 .cert-card:hover { background: var(--paper-2); }
 .cert-card-image {
   aspect-ratio: 16/10;
+  width: 100%;
   background: linear-gradient(135deg, var(--surface), var(--paper-2));
   border: 1px solid var(--hairline);
   display: grid;
   place-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.cert-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: zoom-in;
+  transition: transform 0.4s var(--ease-out);
+}
+.cert-card-image:has(.cert-card-img):hover .cert-card-img {
+  transform: scale(1.04);
+}
+/* Small expand hint shown on hover, only when the image is clickable */
+.cert-card-image:has(.cert-card-img)::after {
+  content: "⤢";
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 0.9rem;
+  border-radius: 999px;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.25s var(--ease-out), transform 0.25s var(--ease-out);
+  pointer-events: none;
+}
+.cert-card-image:has(.cert-card-img):hover::after {
+  opacity: 1;
+  transform: none;
 }
 .cert-card-mark {
   font-family: var(--font-display);
@@ -1159,4 +1196,73 @@ ul, ol { list-style: none; }
 @media (max-width: 520px) {
   .btn { padding: 0.8rem 1.2rem; font-size: 0.85rem; }
   .project-preview { display: none; }
+}
+
+/* =========================================================
+   CERT LIGHTBOX (full-view popup)
+========================================================= */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: clamp(1.5rem, 5vw, 4rem);
+  background: rgba(13, 13, 13, 0.86);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s var(--ease-out), visibility 0.3s var(--ease-out);
+}
+.lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+.lightbox-figure {
+  position: relative;
+  max-width: min(1100px, 100%);
+  max-height: 100%;
+  display: grid;
+  gap: 0.85rem;
+  justify-content: center;
+  transform: scale(0.96);
+  transition: transform 0.35s var(--ease-out);
+}
+.lightbox.is-open .lightbox-figure { transform: none; }
+.lightbox-img {
+  max-width: 100%;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  background: var(--paper);
+  border: 1px solid rgba(245, 243, 238, 0.15);
+}
+.lightbox-caption {
+  color: var(--paper);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  text-align: center;
+  opacity: 0.85;
+}
+.lightbox-close {
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(245, 243, 238, 0.4);
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  color: var(--paper);
+  transition: background 0.25s var(--ease-out), border-color 0.25s var(--ease-out);
+}
+.lightbox-close:hover {
+  background: var(--paper);
+  color: var(--ink);
+}
+@media (max-width: 520px) {
+  .lightbox-close { top: -2.75rem; width: 36px; height: 36px; }
 }

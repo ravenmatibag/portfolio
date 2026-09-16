@@ -116,6 +116,7 @@
       "Software Developer",
       "IT Support Specialist",
       "Creative Technologist",
+      "Data Analyst",
     ];
     let roleIdx = 0, charIdx = 0, deleting = false;
 
@@ -254,6 +255,59 @@
     clearTimeout(window.__marqueeT);
     window.__marqueeT = setTimeout(initMarquees, 180);
   });
+
+  /* ==========================================================
+     CERT LIGHTBOX (click a certificate image to view full size)
+  ========================================================== */
+  const lightbox = $("#certLightbox");
+  const lightboxImg = $("#lightboxImg");
+  const lightboxCaption = $("#lightboxCaption");
+  const lightboxClose = $("#lightboxClose");
+  const certImgs = $$(".cert-card-img");
+
+  if (lightbox && lightboxImg && certImgs.length) {
+    let lastFocused = null;
+
+    const openLightbox = (imgEl) => {
+      lastFocused = document.activeElement;
+      lightboxImg.src = imgEl.currentSrc || imgEl.src;
+      lightboxImg.alt = imgEl.alt || "";
+      if (lightboxCaption) lightboxCaption.textContent = imgEl.alt || "";
+      lightbox.classList.add("is-open");
+      lightbox.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+      lightboxClose && lightboxClose.focus();
+    };
+
+    const closeLightbox = () => {
+      lightbox.classList.remove("is-open");
+      lightbox.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+      lightboxImg.src = "";
+      if (lastFocused) lastFocused.focus();
+    };
+
+    certImgs.forEach((img) => {
+      img.setAttribute("tabindex", "0");
+      img.setAttribute("role", "button");
+      img.setAttribute("aria-label", `View full certificate: ${img.alt || "certificate"}`);
+      img.addEventListener("click", () => openLightbox(img));
+      img.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          openLightbox(img);
+        }
+      });
+    });
+
+    lightboxClose && lightboxClose.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && lightbox.classList.contains("is-open")) closeLightbox();
+    });
+  }
 
   /* ==========================================================
      CONTACT FORM VALIDATION
