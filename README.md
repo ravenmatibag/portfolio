@@ -6,7 +6,7 @@ An editorial-style personal portfolio site for Raven Matibag — a Computer Engi
 
 ## Live Demo
 
-> **[ravenmatibag.github.io/portfolio](https://ravenmatibag.github.io/portfolio/)**
+> **[ravenmatibag.vercel.app/](https://ravenmatibag.vercel.app/)**
 
 ## Features
 
